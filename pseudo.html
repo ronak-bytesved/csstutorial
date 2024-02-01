@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo class and element</title>
+    <style>
+        /* q:lang(no){
+            quotes: "/" "@";
+        } */
+        p {
+            color: white;
+            background-color: red;
+            display: none;
+            padding: 15px;
+        }
+
+        /* when we hover on div it will display the text */
+        div:hover p {
+            display: block;
+        }
+
+        /* after p its write ok in every p element */
+        p::after {
+            content: " ok";
+        }
+
+        /* first line is in green color */
+        p::first-line {
+            color: green;
+        }
+
+        div::selection {
+            color: green;
+            background-color: yellow;
+        }
+
+        p::selection {
+            color: green;
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- this is used for special state of an element -->
+    <div>you hover on it</q>
+        <p>this is p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo culpa laborum nam nihil rerum qui
+            ducimus doloribus omnis soluta itaque. Voluptates, molestias maiores.</p>
+        <p>tol</p>
+        <p>tol</p>
+        <p>tol</p>
+    </div>
+</body>
+
+</html>
