@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>align property</title>
+    <style>
+        .center{
+            border: 2px solid red;
+            height: 200px;
+            position: relative;
+        }
+        .center p {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: 0;
+            -ms-transform: translate(-50%,-50%);
+            transform: translate(-50% ,-50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="center">
+        <p>Lorem ipsum,consectetur adipisicing elit. Similique, harum.
+        </p>
+    </div>
+</body>
+</html>
