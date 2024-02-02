@@ -9,41 +9,39 @@
             margin: 0;
             padding: 0;
         }
-        nav ul{
-            list-style-type: none;
-            background-color: rgb(136, 74, 74);
-            overflow: hidden;
-            
-            
+        nav{
+            background-color: rgba(6, 3, 5, 0.745);
         }
         nav ul li{
-            float: left;
-            /* display: inline; */
-            height: 30px;
-        }
-        
+            display:inline-block;
+            padding: 2.5vh;
+            list-style: none;
+            /* overflow: hidden; */
+            margin-right: -5px;
+            
+        } 
         nav ul li a{
+            font-size: 3vh;
+            color: white;
             text-decoration: none;
-            padding: 14px 16px;    
-            text-align: center;
-            color:white;
-
+        } 
+        ul li:hover{
+            background-color: rgb(160, 95, 138);
         }
-        li a:hover:not(#active){
+        .active{
             background-color: green;
         }
-        #active {
-            background-color: red;
-        }
+
         
         </style>
 </head>
 <body>
     <nav>
         <ul>
-            <li id="active"><a href="#">Home</a></li>
+            <li class="active"><a href="#" >Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">contact</a></li>
+            <li><a href="#">Picture</a></li>
 
         </ul>
     </nav>
